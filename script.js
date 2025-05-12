@@ -31,11 +31,11 @@ function inizializzaTimer() {
 
 function calcolaTempo() {
     tempo_finale = Date.now() - tempo_iniziale;
-    let secondi = Math.floor((tempo_finale % (1000 * 60)) / 1000);
-    let millesimi = Math.floor(tempo_finale % 1000);
-    tempo.innerHTML = "Tempo: " + secondi + "s " + millesimi + "m";
+    let secondi = Math.floor((tempo_finale % (1000 * 60)) / 1000).toString().padStart(2, "0");
+    let millesimi = Math.floor(tempo_finale % 1000).toString().padStart(3, "0");
+    tempo.innerHTML = "Tempo: " + secondi + ":" + millesimi;
 
-    let nuovoTempo = `${nome_giocatore} - ${secondi}s ${millesimi}ms`;
+    let nuovoTempo = `${nome_giocatore} - ${secondi}:${millesimi}`;
     tempi.innerHTML += nuovoTempo + "<br>";
     arrayTempi.push(tempo_finale);
 }
