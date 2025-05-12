@@ -1,38 +1,36 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff; /* Azzurro chiaro */
     margin: 0;
     padding: 0;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; 
+    flex-direction: column;
 }
 
 h1 {
-    text-align: left; 
+    text-align: center;
     color: #333;
     margin-bottom: 10px;
-    width: 90%; 
-    max-width: 400px;
+    font-size: 28px;
 }
 
 p {
-    text-align: left; 
+    text-align: center;
     color: #555;
     margin-bottom: 20px;
-    width: 90%;
-    max-width: 400px;
+    font-size: 16px;
 }
 
 #container {
     background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 30px;
     width: 90%;
-    max-width: 400px;
+    max-width: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -40,19 +38,22 @@ p {
 }
 
 #startButton {
-    background-color: #007bff;
+    background-color: #4caf50; /* Verde */
     color: white;
     border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 16px;
+    border-radius: 25px;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
     margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 #startButton:hover {
-    background-color: #0056b3;
+    background-color: #45a049; /* Verde più scuro */
+    transform: scale(1.05); /* Leggero ingrandimento */
 }
 
 #numero_casuale {
@@ -65,30 +66,46 @@ p {
 #numeri {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 10px;
+    gap: 15px;
     margin: 20px 0;
     width: 100%;
 }
 
 .numero {
-    background-color: #007bff;
+    background-color: #007bff; /* Blu */
     color: white;
-    border-radius: 5px;
-    padding: 15px;
-    font-size: 18px;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 20px;
     font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .numero:hover {
-    background-color: #0056b3;
+    background-color: #0056b3; /* Blu più scuro */
+    transform: translateY(-5px); /* Sollevamento */
+}
+
+#tempo {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
 }
 
 #tempi {
     margin-top: 20px;
     font-size: 16px;
     color: #555;
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+    width: 100%;
+    max-width: 400px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
